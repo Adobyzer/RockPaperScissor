@@ -1,0 +1,60 @@
+body{
+    margin : 0;
+    background-color: black;
+}
+
+
+img{
+    width : 100%;
+}
+
+
+h1,h4{
+    color : white;
+    font-family: "Nabla", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align : center;
+}
+
+@font-face {
+    font-family: Nabla;
+    src: url("./../../../Downloads/Nabla/Nabla-Regular-VariableFont_EDPT\,EHLT.ttf");
+}
+
+.header{
+    display : flex;
+    flex-direction : column;
+    justify-content:flex-start;
+    align-items: center;
+    background-color: red;
+    margin-top : -200px;
+    margin-bottom : 200px;
+}
+
+
+.container-emoji{
+    display : flex;
+    justify-content: space-around;
+    
+}
+
+.container-emoji>button{
+    font-size : 200px;
+    margin-top : -100px;
+    background-color: black;
+    border-style: none;
+}
+
+  h3{
+    color : red;
+
+    text-align: center;
+
+    font-size : 45px;
+
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
