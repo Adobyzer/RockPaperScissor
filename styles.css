@@ -1,6 +1,7 @@
 body{
     margin : 0;
     background-color: black;
+    box-sizing : border-box;
 }
 
 
@@ -24,7 +25,7 @@ h1,h4{
     flex-direction : column;
     justify-content:flex-start;
     align-items: center;
-    margin-top : -200px;
+    margin-top : 50px;
     margin-bottom : 200px;
 }
 
@@ -32,15 +33,32 @@ h1,h4{
 .container-emoji{
     display : flex;
     justify-content: space-around;
+    background-color: black;
     
 }
 
 .container-emoji>button{
     font-size : 200px;
     margin-top : -100px;
-    background-color: black;
     border-style: none;
+    background-color: black;
+    transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+  box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    
 }
+.container-emoji :hover{
+    font-size : 200px;
+
+    display : relative ;
+    top : -12px;
+    cursor: grab;
+    border-radius: 5px;
+    box-shadow: 0 0 100px white;
+   z-index: 1;
+}
+
 
   h3{
 
@@ -50,3 +68,63 @@ h1,h4{
     font-weight: 400;
     font-style: normal;
 }
+
+.score{
+    margin-top : 30px;
+    display : flex;
+    flex-wrap: wrap;
+    width : 400px;
+    height : 250px;
+
+}
+
+.player{
+    height : 40px;
+    flex : 1 1 50%;
+    color : white;
+    text-align : center;
+    font-size : 30px;
+}
+
+.computer{
+    height : 40px;
+    flex : 1 1 50%;
+    color : white;
+    text-align : center;
+    font-size : 30px;
+}
+
+.player-score{
+    height : 210px;
+    width : 100px;
+    flex : 1 1 50%;
+    font-size : 50px;
+    color : orange;
+}
+
+.computer-score{
+    height : 210px;
+    width : 100px;
+    flex : 1 1 50%;
+    font-size : 50px;
+    color : orange;
+    padding-left : 0px;
+
+}
+
+
+.player-score-text{
+    color : orange;
+    text-align : center;
+    font-size : 40px;
+    padding-left : 80px;
+}
+
+.computer-score-text{
+    color : orange;
+    text-align : center;
+    font-size : 40px;
+    padding-left : 190px;
+}
+
+
